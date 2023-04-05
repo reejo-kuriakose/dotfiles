@@ -1,7 +1,8 @@
 window {
     font-family: monospace;
     font-size: 14pt;
-    color: #cdd6f4; /* text */
+    color: #292929; /* text */
+    border-color: #292929;
     background-color: rgba(30, 30, 46, 0.5);
 }
 
@@ -9,19 +10,23 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 25%;
-    border: none;
+    border: 1px solid transparent;
     background-color: rgba(30, 30, 46, 0);
     margin: 5px;
-    transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 button:hover {
-    background-color: rgba(49, 50, 68, 0.1);
+    background-color: #292929;
+    border: 1px solid;
+    border-color:#D7D7D7;
 }
 
 button:focus {
-    background-color: #cba6f7;
-    color: #1e1e2e;
+    background-color: #CDD6F4;
+    color: #292929;
+    border: 1px solid;
+    border-color: #292929;
 }
 
 #lock {
